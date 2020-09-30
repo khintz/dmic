@@ -5,15 +5,16 @@ Sometimes you need to convert files from one another. This is a collection of to
 **pip install dmic**
 
 ## Usage
-**dmic -h** : *gives help message*
+**dmic -h** : *gives help message*\
 **dmic [command]** : *see below*
-Possible commands are:
+
+Possible commands are:\
 **grib2nc** : *convert a gribfile to netcdf*
 
 ### Flags
-**-v**, **--verbose** : *verbose mode*
-**-i**, **--input** : *input file*
-**-o**, **--output** : *output file*
+**-v**, **--verbose** : *verbose mode*\
+**-i**, **--input** : *input file*\
+**-o**, **--output** : *output file*\
 **-V**, **--version** : *show version number*
 
 ### Examples
