@@ -33,7 +33,7 @@ Options:
 
 Examples:
   Convert gribfile to netcdf file
-    dmic
+    dmic -v grib2nc -i <gribfile> -o <netcdffile>
 
 For Dev:
   dmic -i -o
