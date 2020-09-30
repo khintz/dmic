@@ -16,7 +16,11 @@ setuptools.setup(
     classifiers=[
          "Programming Language :: Python :: 3",
          "License :: OSI Approved :: MIT License",
-         "Operating System :: OS Independent",
+         "Operating System :: MacOS, Ubuntu",
      ],
+     install_requires=[
+          'docopt',
+          'pygrib'
+      ],
     entry_points = {'console_scripts': ['dmic = dmic:main',],},
 )
