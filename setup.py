@@ -20,7 +20,10 @@ setuptools.setup(
      ],
      install_requires=[
           'docopt',
-          'pygrib'
+          'pygrib',
+          'dmit',
+          'numpy',
+          'xarray'
       ],
     entry_points = {'console_scripts': ['dmic = dmic:main',],},
 )

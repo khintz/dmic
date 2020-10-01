@@ -11,6 +11,8 @@ import time
 import logging
 import docopt
 
+import grib2nc
+
 version = '0.0.2'
 __doc__ += """
 Usage:
@@ -22,8 +24,9 @@ Commands:
   grib2nc                       Convert grib file to netCDF4
 
 Options:
-  -i, --infile <STRING>          File or directory with files, usually gribfiles. If directory use with --idir
+  -i, --infile <STRING>         File or directory with files, usually gribfiles. If directory use with --idir
   -o, --outfile <STRING>        Specify output file [default: mapp.nc]
+  -l, --leveltype <STRING>      Which type of level should be converted: sf, pl, ml [default: sf]
   -h, --help                    Show this screen.
   -q, --quiet                   Print no info.
   -v, --verbose                 Print info.
@@ -89,5 +92,13 @@ def main():
 
     if args['grib2nc']:
         log.info("Converting GRIB file to netCDF4")
+
+        leveltype = args['--leveltype']
+
+        grib2nc.convert(infile,leveltype,outfile)
+
     
     return
+
+  
+if __name__=='__main__': main()
